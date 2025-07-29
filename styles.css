@@ -1,0 +1,187 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+	Colors:
+	1 - Almost White = #f8f4f8
+	2 - #fce5fc
+	3 - #ffd6ff
+	4 - #f3ceff
+	5 - Purply = #e7c6ff
+	
+*/
+
+body, html {
+	height: 100%;
+	font-family: "Space Mono", monospace;
+}
+
+header {
+	height: calc(50% + 5vw);
+}
+
+header div.hero_image {
+	background-image: url("images/hero2.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+header div img {
+	height: 60%;
+	position: absolute;
+	top: 50%;
+	left: calc(45% - 15vw);
+	background-position: left;
+	transform: translate(-100%, -50%);
+}
+
+header div.hero_text {
+	text-decoration: underline;
+	text-underline-offset: calc(0.5em + 0.1vw);
+	text-decoration-thickness: calc(2px + 0.05vw);
+	position: absolute;
+	text-align: left;
+	top: 50%;
+	left: 30%;
+	transform: translate(-40%, -50%);
+	color: black;
+	z-index: 1000;
+	font-style: none;
+	text-shadow: 0vw 0vw 0.3vw white;
+}
+
+header div.hero_text p {
+	font-size: calc(5px + 1.5vw);
+	transform: translate(10%, 0);
+	font-weight: bold;
+}
+
+header div.hero_text h1 {
+	font-size: calc(15px + 5vw);
+}
+
+div.links {
+	background-image: url("images/border.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-top: 8%;
+	padding-bottom: 2.5px;
+	padding-right: 5%;
+	text-align: right;
+	background-color: #f8f4f8;
+}
+
+div.links a {
+	text-decoration: none;
+	padding-bottom: 1px;
+	color: black;
+	font-size: calc(10px + 1vw);
+	border-bottom: 1px solid black;
+	margin-bottom: -1px;
+}
+
+div.links a:hover{
+	background-color: #ffbbf9;
+}
+
+div.intro h1 {
+	padding-top: 1em;
+	border-bottom: 1px solid black;
+	margin-bottom: -1px;
+}
+
+div.intro {
+	padding: 0 5%;
+	padding-bottom: 2em;
+	text-align: left;
+	color: black;
+	font-size: calc(10px + 1vw);
+	background-color: #f8f4f8;
+}
+
+div.intro p {
+	margin-top: 2em;
+}
+
+div.updates {
+	padding: 5px;
+	color: black;
+	background-color: #ffd6ff;
+}
+
+div.updates p.update_title {
+	display: default;
+	justify-content: default;
+	border-bottom: 1px solid black;
+	margin-bottom: -1px;
+	padding-top: 1em;
+	margin: 0 5%;
+	font-size: calc(15px + 1.5vw);
+	text-align: center;
+}
+
+div.updates div {
+	margin-top: 1em;
+	padding-bottom: 3em;
+	display: flex;
+	justify-content: flex-end;
+	border-bottom: 1px solid black;
+	margin-bottom: -1px;
+	margin: 0 5%;
+}
+
+div.updates div p.update_text {
+	position: relative;
+	text-align: left;
+	padding-top: 5%;
+	margin-left: 4%;
+	padding-left: 1%;
+	padding-right: 3%;
+	float: left;
+	font-size: calc(10px + 1vw);
+	border-left: 1px solid black;
+}
+
+div.updates div img.update_image {
+	margin-right: 5%;
+	margin-top: 5%;
+	border: 1px solid black;
+	width: 50%;
+	height: 100%;
+}
+
+div.updates div p span.date {
+	font-style: italic;
+}
+
+@media (max-width: 720px) {
+	div.links {
+		display: flex;
+		justify-content: space-around;
+		font-size: calc(5px + 2vw);
+		padding-right: 0;
+		
+	}
+	
+	div.updates div {
+		display: inline-block;
+		justify-content: default;
+	}
+	
+	div.updates div p.update_text{
+		float: none;
+		clear: both;
+		padding-bottom: 2em;
+	}
+	
+	div.updates div img.update_image {
+		clear: both;
+		width: 100%;
+		margin-top: 0;
+	}
+}
