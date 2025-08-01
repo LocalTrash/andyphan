@@ -20,6 +20,7 @@ body, html {
 
 header {
 	height: calc(50% + 5vw);
+	padding: none;
 }
 
 header div.hero_image {
@@ -92,7 +93,7 @@ div.links a:hover{
 div.intro h1 {
 	padding-top: 1em;
 	border-bottom: 1px solid black;
-	margin-bottom: -1px;
+	margin-bottom: 0.5em;
 }
 
 div.intro {
@@ -105,7 +106,7 @@ div.intro {
 }
 
 div.intro p {
-	margin-top: 2em;
+	margin-top: 1.5em;
 }
 
 div.updates {
